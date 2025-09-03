@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SoulCare Store - Cart & Checkout</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <img id="back-button" src="../image/SoulcastStore - Cart & Checkout/back-button.png">
+    <h2 id="title">Your cart</h2>
+    <div class="container">
+      <p>2 items in your cart</p>
+
+      <div class="cart-item">
+        <img src="../image/SoulcastStore - Cart & Checkout/vitamin.png" alt="Vitamin" />
+        <div class="cart-item-details">
+          <div><strong>Sugar Free Vitamin</strong></div>
+          <div>bottle of 500 capsule</div>
+          <div class="cart-item-qty">$70 <input type="number" value="1" min="1" /></div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="../image/SoulcastStore - Cart & Checkout/calsium.png" alt="Calcium" />
+        <div class="cart-item-details">
+          <div><strong>Sugar Free Calsium</strong></div>
+          <div>bottle of 200 capsule</div>
+          <div class="cart-item-qty">$25 <input type="number" value="1" min="1" /></div>
+        </div>
+      </div>
+
+      <h3>Delivery Address</h3>
+      <div class="address-boxes">
+        <div class="address-box selected">
+          <strong>Home</strong><br />
+          (62) 123475<br />
+          45, Kebon Jeruk, West Jakarta
+        </div>
+        <div class="address-box">
+          <strong>Office</strong><br />
+          (62) 543212<br />
+          78, Kemanggisan, West Jakarta Near BINUS Anggrek
+        </div>
+      </div>
+
+      <div class="payment-summary">
+        <h3>Payment Summary</h3>
+        <div class="summary-line"> <span>Order Total</span> <span>$95</span> </div>
+        <div class="summary-line"> <span>Items Discount</span> <span>-$5.75</span> </div>
+        <div class="summary-line"> <span>Coupon Discount</span> <span>-$0.25</span> </div>
+        <div class="summary-line"> <span>Shipping</span> <span>Free</span> </div>
+        <div class="summary-line total"> <span>Total</span> <span>$89</span> </div>
+      </div>
+
+      <div class="payment-method">
+        <h3>Payment method</h3>
+        <div class="paypal">
+          <input type="radio" name="payment" id="paypal" checked />
+          <label for="paypal">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" width="60" alt="PayPal" />
+            PayPal
+          </label>
+        </div>
+      </div>
+
+      <button class="place-order">Place Order</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
