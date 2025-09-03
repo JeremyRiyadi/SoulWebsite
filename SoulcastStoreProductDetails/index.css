@@ -1,0 +1,257 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    font-family: Quicksand, Arial;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* background */
+.background {
+    z-index: -10000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rumput {
+    z-index: -1000;
+    position: fixed;
+    top: 1.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.moon {
+    position: fixed;
+    z-index: -1001;
+    top: 0;
+    right: 0rem;
+    height: 15rem;
+}
+
+.stars {
+    position: fixed;
+    z-index: -999;
+    top: 0.5rem;
+    left: 2rem;
+    height: 15rem;
+}
+
+.stars1 {
+    position: fixed;
+    z-index: -999;
+    top: 3rem;
+    left: 40rem;
+    height: 20rem;
+}
+
+.stars2 {
+    position: fixed;
+    z-index: -999;
+    top: 9rem;
+    right: 4rem;
+    height: 20rem;
+}
+
+/* biggest container */
+#biggest-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+    padding-left: 3rem;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#header img {
+    height: 30px;
+    width: 40px;;
+}
+
+#header div {
+    font-weight: bold;
+    color: #5FB8BE;
+}
+
+#content {
+    max-height: 65vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+#product-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#product-name div {
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#product-name img {
+    width: 1350px;
+    border-radius: 0.5rem;
+}
+
+#price-cart {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    min-height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 90.5%;
+    margin-top: 1rem;;
+}
+
+#price {
+    font-weight: bold;
+    color: #97D6D6;
+    font-family: Overpass;
+    font-size: 2rem;
+}
+
+#kanan {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+#plus-sign {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+#size {
+    color: white;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#package-size {
+    display: flex;
+    flex-direction: row;
+    min-height: 10rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    width: 90.5%;
+}
+
+#package-size-size {
+    display: flex;
+    width: 12rem;
+    height: 8rem;
+    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 2rem;
+    color: #090F47;
+    background-color: white;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+}
+
+#package-price {
+    font-weight: bold;
+}
+
+#ingredients {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#head-ingredients {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#paragraph-ingredients {
+    color: #D9D9D9;
+    font-size: 1.2rem;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+#head-details {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#paragraph-details {
+    font-size: 1.2rem;
+}
+
+#expiry-brand {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#expiry-brand span {
+    font-weight: normal;
+}
+
+#cart {
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #5FB8BE;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px #5FB8BE; /* ini bagian shadow */
+    margin-bottom: 2rem;
+}
+
+#cart:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
