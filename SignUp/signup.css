@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Quicksand, arial;
+    margin: 0;
+    padding: 0;
+}
+
+.background-container{
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+.signup-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.back-button{
+    height: 40px;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+}
+
+.saklar-button{
+    height: 15rem;
+    position: fixed;
+    right: 6.8rem;
+    top: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.name-container, .email-container, .password-container, .birthdate-container, .age-container{
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: #989898;
+    font-weight: bold;
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 13px 0px;
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.password {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mata {
+    height: 20px;
+    position: absolute;
+    top: 19.5%;
+    right: 22%;
+}
+
+.mata:hover {
+    opacity: 0.4;
+}
+
+/* height & margin bottom ada yang salah */
+.gender-container{
+    display: flex;
+    width: 100%;
+    /* height: 20px; */
+    margin-top: 0.01rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.gender-button{
+    width: 60%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #D9D9D9;
+    color: #989898;
+    font-weight: bold;
+}
+
+.signup-container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-button{
+    width: 60%;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 1px 1px 1.6px #5FB8BE;
+    background-color: #5FB8BE;
+    cursor: pointer;
+}
+
+.signup-button button {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+}
+
+.signup-button:hover{
+    border: 1px solid #DFEFD3;
+    background-color: #DFEFD3;
+    color: black;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 40px;
+}
+
+.male {
+    background-color: #75D9E3;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 29%;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 100%;
+    color: #13225C;
+    box-shadow: 2px 2px 2px #75D9E3;
+}
+
+.female {
+    background-color: #E375BE;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 29%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #6C1667;
+    box-shadow: 2px 2px 2px #E375BE;
+}
+
+.male-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.male-black-button {
+    background-color: black;
+    border: 1px solid #75D9E3;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 1px 2px #75D9E3;
+}
+
+.female-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.female-black-button {
+    background-color: black;
+    border: 1px solid #E375BE;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 1px 2px #E375BE;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        height: 100vh;
+        gap: 0.5rem;
+    }
+
+    .saklar-button {
+        height: 10rem;
+        right: 4rem;
+        top: 0;
+    }
+
+    .container {
+        gap: 0.5rem;
+    }
+
+    .signup-header {
+        font-size: 1rem;
+        margin-top: 5rem;;
+    }
+
+    .name-container, .email-container, .password-container, .birthdate-container, .age-container{
+        width: 80%;
+    }
+
+    .mata {
+        right: 6.5rem;
+        top: 0.75rem
+    }
+
+    .gender-button {
+        width: 80%;
+    }
+
+    .gender {
+        width: 100%;
+    }
+
+    .male-black-button {
+        width: 80%;
+    }
+
+    .female-black-button {
+        width: 80%;
+    }
+
+    .back-button {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-header {
+        font-size: 0.8rem;
+        margin-top: 2rem;;
+    }
+
+    .saklar-button {
+        height: 7rem;
+        right: 3rem;
+    }
+
+    .name-container, .email-container, .password-container, .birthdate-container, .age-container{
+        width: 80%;
+        padding: 12px 0;
+        padding-left: 20px;
+    }
+
+    .mata {
+        right: 3.5rem;
+        height: 18px;
+        top: 0.77rem;
+    }
+
+    .back-button {
+        height: 25px;
+    }
+
+    .gender-button {
+        padding: 13px;
+        padding-left: 20px;
+    }
+}
