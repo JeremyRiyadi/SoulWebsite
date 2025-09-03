@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Splash Animation Crossfade</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                background-color: #071944;
+            }
+            .splash {
+                position: fixed;
+                top: 0; left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: opacity 0.5s ease-in-out;
+                opacity: 0;
+                z-index: 0;
+            }
+            #splash1 {
+                opacity: 1;  
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="splash1" class="splash"></div>
+        <div id="splash2" class="splash"></div>
+
+        <script>
+            const frameCount = 16;
+            let currentFrame = 1;
+            const splash1 = document.getElementById('splash1');
+            const splash2 = document.getElementById('splash2');
+            let showingSplash1 = true;
+
+            // Preload semua gambar supaya loadingnya mulus
+            const frames = [];
+            for(let i = 1; i <= frameCount; i++) {
+                const img = new Image();
+                img.src = `frames/frame${i}.png`;
+                frames.push(img);
+            }
+
+            function playAnimation() {
+                const active = showingSplash1 ? splash1 : splash2;
+                const inactive = showingSplash1 ? splash2 : splash1;
+
+                // Ganti gambar di layer yang tidak aktif
+                inactive.style.backgroundImage = `url('${frames[currentFrame - 1].src}')`;
+
+                // Crossfade
+                inactive.style.opacity = 1;  // fade in
+                active.style.opacity = 0;    // fade out
+
+                showingSplash1 = !showingSplash1;
+                currentFrame++;
+
+                if (currentFrame <= frameCount) {
+                    setTimeout(playAnimation, 600);
+                } else if (currentFrame <= frameCount + 1) {
+                    window.location.href = '../LoginPage/LoginPage.html';
+                }
+            }
+                window.onload = () => {
+                playAnimation();
+            }
+        </script>
+    </body>
+</html>
