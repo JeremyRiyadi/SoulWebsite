@@ -30,5 +30,12 @@ This project was a valuable exercise in applying core web development principles
       - **Vanilla JavaScript**
       - **HTML5**
       - **CSS3**
-      - 
 -----
+
+##  🧑‍💻 Author
+This is a group project developed by students of Binus University:
+- Jeffrey Kurniawan (Front-end Developer)
+- Jeremy Djohar Riyadi (Front-end Developer)
+- Kelvin Jonathan Yusach (UI/UX Designer)
+- Miecel Alicia Angel (UI/UX Designer)
+- Natasha Kayla Cahyadi (Front-end Developer)
