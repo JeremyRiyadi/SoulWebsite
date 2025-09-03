@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness App</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="assets/grass.png" class="rumput">
+    <div class="main-div">
+        <div class="top-bar">
+            <div class="moon-container">
+                <img class="bulan" src="assets/menu bar/moon.png" alt="Moon">
+            </div>
+            <div class="stars-container">
+                <img class="stars" src="assets/menu bar/stars.png" alt="Stars">
+            </div>
+            <div class="header">  
+                <button class="icon-button icon1">
+                    <img class="icon1" src="assets/menu bar/dokter-removebg-preview.png" alt="Doctor">
+                </button>
+                <button class="icon-button icon2">
+                    <img class="icon2" src="assets/menu bar/keranjang-removebg-preview.png" alt="Cart">
+                </button>
+                <div class="profile-container">
+                    <img src="assets/menu bar/profile-removebg-preview.png" alt="Profile" class="profile">
+                    <img src="assets/menu bar/topi-removebg-preview.png" alt="Hat" class="topi">
+                </div>
+            </div>
+        </div>   
+
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- Sidebar with Playlist -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img src="assets/sidebar/Mic_alt_fill.png" alt="Mic">
+                    <h2>Your Playlist (8)</h2>
+                    <div class="sidebar-actions">
+                        <button class="sidebar-btn">
+                            <img class="sidebar-img" src="assets/sidebar/search.png" alt="Search">
+                        </button>
+                        <button class="sidebar-btn">
+                            <img class="sidebar-img" src="assets/sidebar/plus.png" alt="Add">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="playlist">
+                    <div class="playlist-item active" data-podcast-id="1">
+                        <img src="assets/sidebar/playlist1.png" alt="Handle Stress">
+                        <div class="playlist-details">
+                            <h2>Handle Stress</h2>
+                            <p>31 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-podcast-id="2">
+                        <img src="assets/sidebar/playlist2.png" alt="Mindful Talks">
+                        <div class="playlist-details" >
+                            <h2>Mindful Talks</h2>
+                            <p>12 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                           <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                           <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-podcast-id="3">
+                        <img src="assets/sidebar/playlist3.png" alt="Mental Reset">
+                        <div class="playlist-details">
+                            <h2>Mental Reset</h2>
+                            <p>10 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+                    
+                    <div class="playlist-item" data-podcast-id="4">
+                        <img src="assets/sidebar/playlist4.png" alt="Healing in Progress">
+                        <div class="playlist-details">
+                            <h2>Healing in Progress</h2>
+                            <p>30 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+                    
+                    <div class="playlist-item" data-podcast-id="5">
+                        <img src="assets/sidebar/playlist5.png" alt="Breathe & Believe">
+                        <div class="playlist-details">
+                            <h2>Breathe & Believe</h2>
+                            <p>5 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-podcast-id="6">
+                        <img src="assets/sidebar/playlist6.png" alt="Ethereal Echo">
+                        <div class="playlist-details">
+                            <h2>Ethereal Echo</h2>
+                            <p>19 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-podcast-id="7">
+                        <img src="assets/sidebar/playlist7.png" alt="Safe Space Stories">
+                        <div class="playlist-details">
+                            <h2>Safe Space Stories</h2>
+                            <p>80 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-podcast-id="8">
+                        <img src="assets/sidebar/playlist8.png" alt="Growth & Gratitude">
+                        <div class="playlist-details">
+                            <h2>Growth & Gratitude</h2>
+                            <p>55 podcast</p>
+                        </div>
+                        <div class="play-pause-circle">
+                            <img class="play-icon" src="assets/sidebar/Play.png" alt="Play">
+                            <img class="pause-icon hidden" src="assets/sidebar/Pause.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="content">
+                <div class="content-atas">
+                    <!-- Topics Section -->
+                    <div class="topics">
+                        <h3>Whispering Souls</h3>
+                        <div class="topics-table">
+                            <div class="topics-table-header">
+                                <div class="topics-header-topic">
+                                    <p>Topics</p>
+                                </div>
+                                <div class="topics-header-replies">
+                                    <p>Replies</p>
+                                </div>
+                                <div class="topics-header-views">
+                                    <p>Views</p>
+                                </div>
+                            </div>
+
+                            <div class="topics-table-content">
+                                <div class="topics-table-row">
+                                    <div class="topics-table-topic">Stress & Burnout Recovery</div>
+                                    <div class="topics-table-replies">180</div>
+                                    <div class="topics-table-views">1.7k</div>
+                                </div>
+                                <div class="topics-table-row">
+                                    <div class="topics-table-topic">Overcoming Anxiety & Overthinking</div>
+                                    <div class="topics-table-replies">2070</div>
+                                    <div class="topics-table-views">190k</div>
+                                </div>
+                                <div class="topics-table-row">
+                                    <div class="topics-table-topic">Breaking Free from Toxic Patterns</div>
+                                    <div class="topics-table-replies">300</div>
+                                    <div class="topics-table-views">2k</div>
+                                </div>
+                                <div class="topics-table-row">
+                                    <div class="topics-table-topic">Finding Purpose & Meaning in Life</div>
+                                    <div class="topics-table-replies">4k</div>
+                                    <div class="topics-table-views">300k</div>
+                                </div>
+                            </div>
+                            
+                            <div class="topics-footer">
+                                <button class="topics-button">See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reminders Section -->
+                    <div class="reminders">
+                        <h3>Serene Reminders</h3>
+                        <div class="reminders-content">
+                            <div class="reminders-row">
+                                <div class="reminders-date">20/04/2025</div>
+                                <div class="reminders-time">08:00</div>
+                                <div class="reminders-activity">Jogging</div>
+                            </div>
+                            <div class="reminders-row">
+                                <div class="reminders-date">20/04/2025</div>
+                                <div class="reminders-time">15:00</div>
+                                <div class="reminders-activity">Peaceful Tea Break</div>
+                            </div>
+                            <div class="reminders-row">
+                                <div class="reminders-date">20/04/2025</div>
+                                <div class="reminders-time">16:10</div>
+                                <div class="reminders-activity">Stretch & Unwind</div>
+                            </div>
+                            <div class="reminders-row">
+                                <div class="reminders-date">20/04/2025</div>
+                                <div class="reminders-time">18:00</div>
+                                <div class="reminders-activity">Journaling Hour</div>
+                            </div>
+                            <div class="reminders-row">
+                                <div class="reminders-date">20/04/2025</div>
+                                <div class="reminders-time">21:00</div>
+                                <div class="reminders-activity">Sleep</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Section -->
+                <div class="analytics">
+                    <h3>Soul Analytics</h3>
+                    <div class="analytics-content">
+                        <!-- Anxiety Graph -->
+                        <div class="analytics-anxiety">
+                            <div class="anxiety-label">
+                                <p>Very Mild</p>
+                                <p>anxiety</p>
+                            </div>
+                            <div class="anxiety-graph">
+                                <img src="assets/soul-analytics/Vector 8.png" alt="Anxiety Graph" class="graph-line">
+                                <img src="assets/soul-analytics/Group 37315.png" alt="Graph Point" class="graph-point">
+                            </div>
+                        </div>
+
+                        <!-- Sleep Stats -->
+                        <div class="analytics-sleep">
+                            <div class="sleep-icon">
+                                <img src="assets/soul-analytics/sleep.png" alt="Sleep Icon">
+                            </div>
+                            <div class="sleep-details">
+                                <p>Sleep</p>
+                                <h1>9h 08m</h1>
+                                <h2>of 8h sleep</h2>
+                            </div>
+                            <div class="sleep-graph">
+                                <img src="assets/soul-analytics/Group 37313.png" alt="Sleep Graph">
+                            </div>
+                        </div>
+
+                        <!-- Mood Tracker -->
+                        <div class="analytics-mood">
+                            <h3>How's your mood today?</h3>
+                            <div class="mood-emoji">
+                                <button class="emoji-btn"><img src="assets/soul-analytics/Emoji 1.png" alt="Angry"></button>
+                                <button class="emoji-btn"><img src="assets/soul-analytics/Emoji 2.png" alt="Sad"></button>
+                                <button class="emoji-btn"><img src="assets/soul-analytics/Emoji 3.png" alt="Neutral"></button>
+                                <button class="emoji-btn"><img src="assets/soul-analytics/Emoji 4.png" alt="Happy"></button>
+                                <button class="emoji-btn active"><img src="assets/soul-analytics/Emoji 5.png" alt="Very Happy"></button>
+                            </div>
+                            
+                            <!-- Activity Progress -->
+                            <div class="activity-progress">
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-icon">📚</span>
+                                        <span class="progress-count">20/30</span>
+                                        <span class="progress-name">Reading</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 66%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-icon">🏀</span>
+                                        <span class="progress-count">15/30</span>
+                                        <span class="progress-name">Sports</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 50%; background-color: #eb9b7e;"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-icon">💗</span>
+                                        <span class="progress-count">7/30</span>
+                                        <span class="progress-name">Meditation</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 23%; background-color: #eb7ed3;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Media Player -->
+        <div class="media-player">
+            <div class="media-info">
+                <img src="assets/soul-analytics/image 1.png" alt="Album Art" class="album-art">
+                <div class="media-text">
+                    <h3>Don't focus on problem</h3>
+                    <p>Kelvin Jo</p>
+                </div>
+            </div>
+            
+            <div class="media-controls">
+                <button class="control-btn shuffle-btn">
+                    <img src="assets/soul-analytics/shuffle 1.png" alt="Shuffle">
+                </button>
+                <button class="control-btn prev-btn">
+                    <img src="assets/soul-analytics/step-forward 2.png" alt="Previous">
+                </button>
+                <button class="control-btn play-pause-btn" id="playPauseBtn">
+                    <span id="playPauseIcon">||</span>
+                </button>
+                <button class="control-btn next-btn">
+                    <img src="assets/soul-analytics/step-forward.png" alt="Next">
+                </button>
+                <button class="control-btn repeat-btn">
+                    <img src="assets/soul-analytics/rotate-right 1.png" alt="Repeat">
+                </button>
+            </div>
+            
+            <div class="media-timeline">
+                <span class="current-time">03:41</span>
+                <div class="timeline-bar">
+                    <div class="timeline-progress"></div>
+                </div>
+                <span class="total-time">12:11</span>
+            </div>
+            
+            <div class="media-volume">
+                <button class="volume-btn">
+                    <img src="assets/menu bar/volume.png" alt="Volume">
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-level"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <script src="mainpage.js"></script>
+</body>
+</html>
