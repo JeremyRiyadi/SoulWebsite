@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Psychologist Today</title>
+    <link rel="stylesheet" href="psychologyst.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="background-paling-belakang" src="../image/SoulcastPlaylist/background_warna_belakang.png" />
+    <img class="background" src="../image/SoulcastPlaylist/grass.png" />
+    <img class="moon" src="../image/SoulcastPlaylist/moonn.png"/>
+    <img class="stars" src="../image/SoulcastPlaylist/stars.png"/>
+
+    <div class="container">
+        <div class="header">
+            <img class="back-button" src="../image/SoulcastPlaylist/back-button.png" alt="Back" onclick="goBack()">
+        </div>
+
+        <h1 class="title">Find Your Psychologist Today!</h1>
+
+        <div class="psychologists-grid">
+            <!-- Aliza -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/aliza.png" alt="Aliza">
+                </div>
+                <h3>Aliza</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag anxiety">Anxiety</span>
+                    <span class="tag self-harm">Self-Harm</span>
+                    <span class="tag grief">Grief</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Aliza')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Aliza')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Lisa -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/lisa-profile.png" alt="Lisa">
+                </div>
+                <h3>Lisa</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag anxiety">Anxiety</span>
+                    <span class="tag depression">Depression</span>
+                    <span class="tag self-worth">Self-worth</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Lisa')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Lisa')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Angela -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/angela.png" alt="Angela">
+                </div>
+                <h3>Angela</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag anxiety">Anxiety</span>
+                    <span class="tag mood-swings">Mood-swings</span>
+                    <span class="tag coaching">Coaching</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Angela')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Angela')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Ryan -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/ryan.png" alt="Ryan">
+                </div>
+                <h3>Ryan</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag anxiety">Anxiety</span>
+                    <span class="tag depression">Depression</span>
+                    <span class="tag grief">Grief</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Ryan')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Ryan')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Zayn -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/zyan.png" alt="Zayn">
+                </div>
+                <h3>Zayn</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag self-worth">Self-worth</span>
+                    <span class="tag depression">Depression</span>
+                    <span class="tag self-worth">Self-worth</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Zayn')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Zayn')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Levent -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/levent.png" alt="Levent">
+                </div>
+                <h3>Levent</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag anxiety">Anxiety</span>
+                    <span class="tag depression">Depression</span>
+                    <span class="tag coaching">Coaching</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: CBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Levent')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Levent')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Maya -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/angela.png" alt="Maya">
+                </div>
+                <h3>Maya</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag trauma">Trauma</span>
+                    <span class="tag ptsd">PTSD</span>
+                    <span class="tag mindfulness">Mindfulness</span>
+                    <span class="tag rating">4.8</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: EMDR</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Maya')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Maya')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- David -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/ryan.png" alt="David">
+                </div>
+                <h3>David</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag addiction">Addiction</span>
+                    <span class="tag relationships">Relationships</span>
+                    <span class="tag anger">Anger</span>
+                    <span class="tag rating">4.6</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: DBT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('David')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('David')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Sophia -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/aliza.png" alt="Sophia">
+                </div>
+                <h3>Sophia</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag eating-disorders">Eating Disorders</span>
+                    <span class="tag body-image">Body Image</span>
+                    <span class="tag self-worth">Self-worth</span>
+                    <span class="tag rating">4.9</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: ACT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Teens">
+                        <span>Teens, Young Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Sophia')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Sophia')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Marcus -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/levent.png" alt="Marcus">
+                </div>
+                <h3>Marcus</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag adhd">ADHD</span>
+                    <span class="tag autism">Autism</span>
+                    <span class="tag learning">Learning</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: ABA</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Children">
+                        <span>Children, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Marcus')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Marcus')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Elena -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/lisa-profile.png" alt="Elena">
+                </div>
+                <h3>Elena</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag couples">Couples</span>
+                    <span class="tag family">Family</span>
+                    <span class="tag communication">Communication</span>
+                    <span class="tag rating">4.8</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: EFT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Couples">
+                        <span>Couples, Families</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Elena')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Elena')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- James -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/zyan.png" alt="James">
+                </div>
+                <h3>James</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag ocd">OCD</span>
+                    <span class="tag phobias">Phobias</span>
+                    <span class="tag panic">Panic</span>
+                    <span class="tag rating">4.6</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: ERP</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults, Adolescents</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('James')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('James')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Aria -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/levent.png" alt="Aria">
+                </div>
+                <h3>Aria</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag stress">Stress</span>
+                    <span class="tag burnout">Burnout</span>
+                    <span class="tag work-life">Work-Life</span>
+                    <span class="tag rating">4.7</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: Mindfulness</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Aria')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Aria')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Nathan -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/ryan.png" alt="Nathan">
+                </div>
+                <h3>Nathan</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag bipolar">Bipolar</span>
+                    <span class="tag mood-disorders">Mood Disorders</span>
+                    <span class="tag medication">Medication</span>
+                    <span class="tag rating">4.8</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: IPT</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Adults">
+                        <span>Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Nathan')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Nathan')">Book Here</button>
+                </div>
+            </div>
+
+            <!-- Zara -->
+            <div class="psychologist-card">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/lisa-profile.png" alt="Zara">
+                </div>
+                <h3>Zara</h3>
+                <p class="role">Psychologist</p>
+                <div class="tags">
+                    <span class="tag identity">Identity</span>
+                    <span class="tag lgbtq">LGBTQ+</span>
+                    <span class="tag cultural">Cultural</span>
+                    <span class="tag rating">4.9</span>
+                </div>
+                <div class="approach">
+                    <span>Approach: Humanistic</span>
+                    <div class="audience">
+                        <img src="../image/SoulSupport/adults-icon.png" alt="Teens">
+                        <span>Teens, Young Adults</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="view-profile" onclick="viewProfile('Zara')">View Profile 👁</button>
+                    <button class="book-here" onclick="bookAppointment('Zara')">Book Here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="psychologyst.js"></script>
+</body>
+</html>
