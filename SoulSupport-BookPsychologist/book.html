@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment with Lisa</title>
+    <link rel="stylesheet" href="book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="background-paling-belakang" src="../image/SoulcastPlaylist/background_warna_belakang.png" />
+    <img class="background" src="../image/SoulcastPlaylist/grass.png" />
+    <img class="moon" src="../image/SoulcastPlaylist/moonn.png"/>
+    <img class="stars" src="../image/SoulcastPlaylist/stars.png"/>
+
+    <div class="header">
+        <img class="back-button" src="../image/SoulcastPlaylist/back-button.png">
+    </div>
+
+    <div class="full-page">
+        <div class="profile-section">
+            <h1 class="greeting">Hi, I'm Lisa!</h1>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="../image/SoulSupport/lisa-profile.png" alt="Lisa's profile picture">
+                </div>
+                <div class="profile-info">
+                    <p>With over 6 years of experience in clinical psychology, Lisa specializes in helping adults and young professionals navigate anxiety, self-worth, burnout, and life transitions. She combines Cognitive Behavioral Therapy (CBT) with a person-centered approach, creating a warm, non-judgmental space for clients to explore their thoughts and emotions safely.</p>
+                    <p>Whether you're facing daily stress or a deeper internal struggle, Lisa works collaboratively with you to build clarity, coping tools, and long-term emotional resilience.</p>
+                    <p class="availability">Available for online sessions. Fluent in English and Indonesian.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-section" id="bookingSection">
+            <h2 class="section-title">choose your type of appointment</h2>
+            <div class="appointment-types">
+                <label class="appointment-option">
+                    <input type="radio" name="appointmentType" value="clinic" checked>
+                    <div class="option-content">
+                        <span class="option-title">Clinic Visit</span>
+                        <span class="option-price">$ 30</span>
+                    </div>
+                </label>
+                <label class="appointment-option">
+                    <input type="radio" name="appointmentType" value="video">
+                    <div class="option-content">
+                        <span class="option-title">Video Consult</span>
+                        <span class="option-price">$ 40</span>
+                    </div>
+                </label>
+                <label class="appointment-option">
+                    <input type="radio" name="appointmentType" value="call">
+                    <div class="option-content">
+                        <span class="option-title">Call Consult</span>
+                        <span class="option-price">$ 20</span>
+                    </div>
+                </label>
+            </div>
+
+            <h2 class="section-title">choose time slot</h2>
+            <div class="date-selection">
+                <button class="date-option active" data-date="today">
+                    <div class="date-label">Today</div>
+                    <div class="slots-available">10 slots available</div>
+                </button>
+                <button class="date-option" data-date="tomorrow">
+                    <div class="date-label">Tomorrow</div>
+                    <div class="slots-available">24 slots available</div>
+                </button>
+                <button class="date-option date-picker" id="datePicker">
+                    <img src="../image/SoulSupport/calendar-icon.png" alt="Calendar" class="calendar-icon">
+                    <div>Select Date</div>
+                </button>
+            </div>
+
+            <div class="time-of-day">
+                <div class="time-category">
+                    <div class="time-icon">
+                        <img src="../image/SoulSupport/morning-icon.png" alt="Morning" class="time-of-day-icon">
+                    </div>
+                    <div class="time-info">
+                        <span class="time-label">Morning</span>
+                        <span class="time-availability not-available">not available</span>
+                    </div>
+                </div>
+                <div class="time-category">
+                    <div class="time-icon">
+                        <img src="../image/SoulSupport/afternoon-icon.png" alt="Afternoon" class="time-of-day-icon">
+                    </div>
+                    <div class="time-info">
+                        <span class="time-label">Afternoon</span>
+                        <span class="time-availability not-available">not available</span>
+                    </div>
+                </div>
+                <div class="time-category">
+                    <div class="time-icon">
+                        <img src="../image/SoulSupport/evening-icon.png" alt="Evening" class="time-of-day-icon">
+                    </div>
+                    <div class="time-info">
+                        <span class="time-label">Evening</span>
+                        <span class="time-availability">8 slots</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-slots">
+                <button class="time-slot">6:00 PM</button>
+                <button class="time-slot">6:15 PM</button>
+                <button class="time-slot">6:30 PM</button>
+                <button class="time-slot">6:45 PM</button>
+                <button class="time-slot">7:00 PM</button>
+                <button class="time-slot">7:15 PM</button>
+                <button class="time-slot">7:30 PM</button>
+                <button class="time-slot">7:45 PM</button>
+            </div>
+
+            <button class="book-button" id="bookButton">Book Session</button>
+        </div>
+
+        <div class="confirmation-message" id="confirmationMessage">
+            <div class="confirmation-content">
+                <img src="../image/SoulSupport/success-icon.png" alt="Success" class="success-icon">
+                <h2>Your session is booked!</h2>
+                <p>Thank you for booking an appointment with Lisa.</p>
+                <button class="back-to-main" id="backToMainButton">Back to Main Page</button>
+            </div>
+        </div>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>
