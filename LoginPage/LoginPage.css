@@ -1,0 +1,327 @@
+body {
+    font-family: Quicksand, Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.background {
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding-top: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.panah-kiri {
+    height: 40px;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+}
+
+.login {
+    color: white;
+    margin: 0;
+}
+
+.saklar {
+    position: fixed;
+    height: 15rem;
+    right: 6rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-input {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 13px 0px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.password-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.password-input {
+    width: 40%;
+    padding: 13px 0px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.mata {
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+
+.mata:hover {
+    opacity: 0.4;
+}
+
+.container-forgot-password {
+    width: 42%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forgot-password {
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    color: #58CDFF;
+    cursor: pointer;
+}
+
+.container-login-button {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    width: 42%;
+    border-radius: 10px;
+    border: 1px solid #5FBEC6;
+    padding: 12px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #5FBEC6;
+    color: white;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 4px lightblue;
+}
+
+.sign-up-container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.sign-up-sentence {
+    color: darkgrey;
+    font-size: 12px;
+}
+
+.sign-up {
+    color: white;
+    cursor: pointer;
+}
+
+.sign-up:hover {
+    color: #58CDFF;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.div1 {
+    border-bottom: 1px solid white;
+    flex: 1;
+}
+
+.OR-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+}
+
+.OR {
+    font-size: 12px;
+    position: fixed;
+    color: white;
+}
+
+.div2 {
+    border-bottom: 1px solid white;
+    flex: 1;
+}
+
+.no-border {
+    flex: 0.5;
+}
+
+.google-logo {
+    height: 30px;
+    position: absolute;
+    left: 32%;
+}
+
+.signin-with-google {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.signin-google:hover button {
+    box-shadow: 0 4px 6px gray;
+    border: none;
+}
+
+.signin-google {
+    width: 42%;
+}
+
+.signin-google button{
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .panah-kiri {
+        left: 5%;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+    .saklar {
+        right: 4rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .panah-kiri {
+        height: 20px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .saklar {
+        height: 6rem;
+        right: 3rem;
+    }
+
+    .email-input {
+        width: 60%;
+        margin-bottom: 20px;
+        padding: 12px 0px;
+        padding-left: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 0.7rem;
+    }
+
+    .password-input {
+        width: 60%;
+        margin-bottom: 20px;
+        padding: 12px 0px;
+        padding-left: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 0.7rem;
+    }
+
+    .mata {
+        height: 17px;
+        top: 0.7rem;
+        right: 5rem;
+    }
+
+    .container-forgot-password {
+        width: 63%;
+        display: flex;
+        align-items: start;
+        justify-content: flex-end;
+    }
+
+    .forgot-password {
+        color: darkgrey;
+        font-weight: bold;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .login-button {
+        width: 63.5%;
+        font-size: 0.7rem;
+    }
+
+    .OR-div {
+        margin: 0 15px;
+    }
+
+    .signin-google {
+        width: 60%;
+    }
+
+    .google-logo {
+        height: 25px;
+        left: 5rem;
+    }
+
+    .signin-google button {
+        font-size: 12px;
+        padding-left: 20px;
+    }
+
+    .sign-up-sentence {
+        font-size: 10px;
+    }
+}
