@@ -19,7 +19,7 @@ This project was a valuable exercise in applying core web development principles
 
 ## ✨ Key Features
 
-  - **Interactive Interface**: The design prioritizes ease of use and a welcoming feel.
+  - **Interactive Interface**: The design prioritizes ease of use and a welcoming feel. (not implemented yet)
   - **Vanilla Tech Stack**: This project was developed entirely using vanilla technologies, showcasing a strong grasp of core web development concepts.
 
 -----
@@ -32,6 +32,3 @@ This project was a valuable exercise in applying core web development principles
       - **CSS3**
       - 
 -----
-
-
-Ini adalah teks yang terlihat normal.
